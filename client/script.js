@@ -216,7 +216,7 @@ document.getElementById('query-button').addEventListener('click', query)
 
 // CODE HERE
 const form = document.querySelector('form')
-// const input = document.querySelector('body')
+// const input = document.querySelector('input')
 
 // function clearFood() {
 //     input.innerHTML = ``
@@ -239,6 +239,8 @@ const createFood = (event) => {
             let newFood = document.createElement('li')
             newFood.textContent = foodInput
             listContainer.appendChild(newFood)
+
+            // foodInput.value = ''
         })
         .catch((err) => {
             console.log(err)
